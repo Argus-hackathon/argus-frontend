@@ -102,6 +102,9 @@ class Dashboard extends React.Component {
                     return routes[i].name
                 }
             }
+            if (routes[i].header) {
+                return routes[i].header;
+            }
         }
         return activeRoute
     }
