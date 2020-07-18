@@ -9,7 +9,6 @@ class Statistics extends React.Component {
         super(props)
         this.state = {}
     }
-
     render() {
         return (<></>)
     }
