@@ -7,8 +7,6 @@ import image from 'assets/img/sidebar-2.jpg'
 import appStyle
     from 'assets/jss/material-dashboard-pro-react/layouts/adminStyle.jsx'
 import cx from 'classnames'
-import FixedPlugin from 'components/FixedPlugin/FixedPlugin.jsx'
-import Footer from 'components/Footer/Footer.jsx'
 // core components
 import AdminNavbar from 'components/Navbars/AdminNavbar.jsx'
 import Sidebar from 'components/Sidebar/Sidebar.jsx'
@@ -180,8 +178,8 @@ class Dashboard extends React.Component {
                             <Switch>{this.getRoutes(routes)}</Switch>
                         </div>
                     )}
-                    {this.getRoute() ? <Footer fluid /> : null}
-                    <FixedPlugin
+                    {/*{this.getRoute() ? <Footer fluid /> : null}*/}
+                    {/*<FixedPlugin
                         handleImageClick={this.handleImageClick}
                         handleColorClick={this.handleColorClick}
                         handleBgColorClick={this.handleBgColorClick}
@@ -193,7 +191,7 @@ class Dashboard extends React.Component {
                         fixedClasses={this.state.fixedClasses}
                         sidebarMinimize={this.sidebarMinimize.bind(this)}
                         miniActive={this.state.miniActive}
-                    />
+                    />*/}
                 </div>
             </div>
         )

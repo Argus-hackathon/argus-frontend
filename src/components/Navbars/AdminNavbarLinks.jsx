@@ -1,26 +1,12 @@
-import ClickAwayListener from '@material-ui/core/ClickAwayListener'
-import Grow from '@material-ui/core/Grow'
-import Hidden from '@material-ui/core/Hidden'
-import MenuItem from '@material-ui/core/MenuItem'
-import MenuList from '@material-ui/core/MenuList'
-import Paper from '@material-ui/core/Paper'
-import Popper from '@material-ui/core/Popper'
 // @material-ui/core components
 import withStyles from '@material-ui/core/styles/withStyles'
-import Dashboard from '@material-ui/icons/Dashboard'
-import Notifications from '@material-ui/icons/Notifications'
-// @material-ui/icons
-import Person from '@material-ui/icons/Person'
-import Search from '@material-ui/icons/Search'
-
 import adminNavbarLinksStyle
     from 'assets/jss/material-dashboard-pro-react/components/adminNavbarLinksStyle.jsx'
 import classNames from 'classnames'
-import Button from 'components/CustomButtons/Button.jsx'
 // core components
-import CustomInput from 'components/CustomInput/CustomInput.jsx'
 import PropTypes from 'prop-types'
 import React from 'react'
+// @material-ui/icons
 
 // import { Manager, Target, Popper } from "react-popper";
 
@@ -59,7 +45,7 @@ class HeaderLinks extends React.Component {
         })
         return (
             <div className={wrapper}>
-                <CustomInput
+                {/*<CustomInput
                     rtlActive={rtlActive}
                     formControlProps={{
                         className: classes.top + ' ' + classes.search
@@ -228,7 +214,7 @@ class HeaderLinks extends React.Component {
               {rtlActive ? 'الملف الشخصي' : 'Profile'}
             </span>
                     </Hidden>
-                </Button>
+                </Button>*/}
             </div>
         )
     }

@@ -543,7 +543,7 @@ class Sidebar extends React.Component {
                         {brand}
                         <SidebarWrapper
                             className={sidebarWrapper}
-                            user={user}
+                            // user={user}
                             links={links}
                         />
                         {image !== undefined ? (
