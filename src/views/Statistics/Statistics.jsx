@@ -6,7 +6,7 @@ import { Map, TileLayer, Marker, Popup } from 'react-leaflet'
 import './Statistics.css'
 import 'leaflet/dist/leaflet.css'
 import Table from 'components/Table/Table.jsx'
-
+import axios from 'axios'
 
 class Statistics extends React.Component {
     constructor() {
@@ -58,6 +58,14 @@ class Statistics extends React.Component {
             }]
         }
     }
+
+    // componentDidMount() {
+    //     axios.get('https://argus-uploader-api.herokuapp.com/poll_stations')
+    //         .then(res => {
+    //             console.log(res.data.stations)
+    //             this.setState({ stations: res.data.stations });
+    //         })
+    // }
     
 
     render() {
@@ -71,7 +79,7 @@ class Statistics extends React.Component {
               attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
               url='https://{s}.tile.osm.org/{z}/{x}/{y}.png'
             />
-            {this.state.stations.map(station => <Marker position={{
+            {this.state.stations && this.state.stations.map(station => <Marker position={{
                 lat: station.latitude,
                 lng: station.longitude,
                 zoom: 7,
